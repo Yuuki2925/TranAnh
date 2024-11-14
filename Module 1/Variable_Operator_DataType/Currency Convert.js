@@ -17,5 +17,5 @@ function convert(){
         res = "Result: " + amount + "$";
     }
 
-    document.getElementById("result").innerHTML = res;
+    document.getElementById("result").innerHTML = "<h3>" + res + "<h1>";
 }
