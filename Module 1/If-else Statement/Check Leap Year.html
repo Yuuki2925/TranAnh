@@ -17,10 +17,12 @@
 <body>
     <div class="LeapY">
         <div style="color: red; font-size: 20px"><b>Kiểm tra năm nhuận</b></div>
-        <label for="leapYear"></label>
-        <input type="number" name="leapYear" id="leapYear" placeholder="Nhập năm">
-        <button type="submit" onclick="LeapYearr()">Check</button>
-        <div id="result"></div>
+        <form action="" onsubmit="LeapYearr(event)">
+            <label for="leapYear"></label>
+            <input type="number" name="leapYear" id="leapYear" placeholder="Nhập năm">
+            <button type="submit">Check</button>
+            <div id="result"></div>
+        </form>
     </div>
 </body>
 </html>

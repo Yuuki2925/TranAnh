@@ -20,29 +20,31 @@
 </head>
 <body>
 <table class = "fixed">
-  <tr>
-    <th>Amount</th>
-    <th>From Currency</th>
-    <th>To Currency</th>
-  </tr>
-  <tr>
-    <td><input type="number" id="amount" min="0"></td>
-    <td>
-      <select id="from">
-        <option value="USD">USD</option>
-        <option value="VND">VND</option>
-      </select>
-    </td>
-    <td>
-      <select id="to">
-        <option value="VND">VND</option>
-        <option value="USD">USD</option>
-      </select>
-    </td>
-    <td>
-      <button type="submit" onclick="convert()">Convert</button>
-    </td>
-  </tr>
+  <form action="" onsubmit="convert(event)">
+    <tr>
+      <th>Amount</th>
+      <th>From Currency</th>
+      <th>To Currency</th>
+    </tr>
+    <tr>
+      <td><input type="number" id="amount" min="0"></td>
+      <td>
+        <select id="from">
+          <option value="USD">USD</option>
+          <option value="VND">VND</option>
+        </select>
+      </td>
+      <td>
+        <select id="to">
+          <option value="VND">VND</option>
+          <option value="USD">USD</option>
+        </select>
+      </td>
+      <td>
+        <button type="submit">Convert</button>
+      </td>
+    </tr>
+  </form>
 </table>
   <div id="result"></div>
 </body>

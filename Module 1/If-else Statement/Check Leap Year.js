@@ -1,4 +1,5 @@
-function LeapYearr(){
+function LeapYearr(a){
+    a.preventDefault();
     let year = Number(document.getElementById("leapYear").value);
 
     if((year % 4 == 0 && year % 100 != 0) || (year % 100 == 0 && year % 400 == 0)){
