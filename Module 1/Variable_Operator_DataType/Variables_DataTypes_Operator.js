@@ -29,3 +29,24 @@ function Perimete(){
     document.getElementById("result4").innerHTML = "<b>Result: </b>" + res;
 }
 
+function Reset1(){
+    document.getElementById("number1").value = "";
+    document.getElementById("number2").value = "";
+    document.getElementById("number3").value = "";
+    document.getElementById("result1").innerHTML = "";
+}
+
+function Reset2(){
+    document.getElementById("celsius").value = "";
+    document.getElementById("result2").innerHTML = "";
+}
+
+function Reset3(){
+    document.getElementById("circle1").value = "";
+    document.getElementById("result3").innerHTML = "";
+}
+
+function Reset4(){
+    document.getElementById("circle2").value = "";
+    document.getElementById("result4").innerHTML = "";
+}

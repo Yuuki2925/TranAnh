@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me</title>
+  <style>
+    h1{
+      width: 30%;
+      margin: auto;
+      color: blue;
+      font-family: "Arial Black";
+    }
+    input[value="Yes"]{
+      width: 60px;
+      margin: 0px 0px 0px 550px;
+      padding: 5px;
+      color: #df5c22;
+      background-color: rgba(16, 14, 14, 0.82);
+      font-weight: bold;
+    }
+    input[value="No"]{
+      width: 60px;
+      margin: 0px 0px 0px 20px;
+      padding: 5px;
+      color: #df5c22;
+      background-color: rgba(16, 14, 14, 0.82);
+      font-weight: bold;
+      position: absolute;
+    }
+    img{
+      width: 300px;
+      height: auto;
+      margin: 20px 0px 50px 470px;
+    }
+  </style>
+</head>
+<body>
+  <h1><b>Do you love me?</b></h1>
+  <div>
+    <img src = "https://inkythuatso.com/uploads/thumbnails/800/2022/03/meo-cam-bong-hoa-tren-tay-manh-me-len-23-09-00-15.jpg" alt = "Con mều cầm hoa">
+  </div>
+  <input type="button" value="Yes" onclick="clickHere('clickYes')">
+  <input type="button" value="No" id="No" onmouseover="clickHere('clickNo')">
+  <div id="res"></div>
+</body>
+</html>
+<script src ="DoYouLoveMe.js"></script>
