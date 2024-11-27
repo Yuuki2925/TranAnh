@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create an Array</title>
+    <style>
+        .Array_input{
+            position: relative;
+            top: 5px;
+        }
+        input{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "Array_input">
+        <label for="array"></label>
+        <input type="number" name="array" id="array" placeholder="Nhập mảng">
+        <input type="button" value="Add" onclick="Add_Element_Array()">
+        <input type="button" value="Display" onclick = "Display_Element_Array()">
+        <input type="button" value="Sort" onclick="Sort_Array()">
+        <input type="button" value="Reverse" onclick="Reverse_Array()">
+    </div>
+    <div id="res"></div>
+</body>
+</html>
+<script src = "main.js"></script>
