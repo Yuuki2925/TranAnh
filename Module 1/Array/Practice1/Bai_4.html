@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4:</title>
+</head>
+<body>
+    <div id="res"></div>
+    <script>
+        let numbers = parseInt(prompt("Nhập số:"));
+        let cnt = 0;
+        let arr = [];
+        for(let i = 0; i < numbers; i++){
+            arr[i] = prompt("[" + i + "]");
+        }
+        document.getElementById("res").innerHTML = arr.reverse();
+    </script>
+</body>
+</html>

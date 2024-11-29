@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9:</title>
+</head>
+<body>
+<div id="res"></div>
+<script>
+    let a = prompt("Nhap a: ");
+    let arr1 = [];
+    let arr2 = [];
+    for (let i = 0; i < a; i++) {
+        arr1[i] = parseInt(prompt("[" + i + "]"));
+    }
+    let b = prompt("Nhap b: ");
+    for (let i = 0; i < b; i++) {
+        arr2[i] = parseInt(prompt("[" + i + "]"));
+    }
+    c = arr1.concat(arr2);
+    document.getElementById("res").innerHTML = c;
+</script>
+</body>
+</html>

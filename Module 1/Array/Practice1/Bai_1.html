@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 1:</title>
+</head>
+<body>
+  <div id="res"></div>
+<script>
+  let numbers = parseInt(prompt("Nhập số:"));
+  let cnt = 0;
+  let arr = [];
+  for(let i = 0; i < numbers; i++){
+    arr[i] = prompt("[" + i + "]");
+  }
+  for(let i = 0; i < numbers; i++){
+    if(arr[i] >= 10){
+      cnt++;
+    }
+  }
+  document.getElementById("res").innerHTML = "Số phần tử lớn hơn hoặc bằng 10 là: " + cnt;
+</script>
+</body>
+</html>

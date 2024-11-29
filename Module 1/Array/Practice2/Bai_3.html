@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3:</title>
+</head>
+<body>
+<div id="res"></div>
+<script>
+    let arr = ['a', '1', 'b', '3', 'c', '4', '5', 'x'];
+    let cnt = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] !== " "){
+            cnt++;
+        }
+    }
+    document.getElementById("res").innerHTML = "Số phần tử trong mảng là: "  + cnt;
+</script>
+</body>
+</html>

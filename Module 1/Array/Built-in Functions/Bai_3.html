@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3:</title>
+</head>
+<body>
+    <div id="res"></div>
+    <script>
+        let str = prompt("Enter your word: ");
+        let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let lower = "abcdefghijklmnopqrstuvwxyz";
+        let res = [];
+        for(let i = 0; i < str.length; i++){
+            if(upper.indexOf(str[i]) !== -1){
+                res.push(str[i].toLowerCase());
+            }
+            else if(lower.indexOf(str[i]) !== -1){
+                res.push(str[i].toUpperCase());
+            }
+            else{
+                res.push(str[i]);
+            }
+        }
+        document.getElementById("res").innerHTML = res.join("");
+    </script>
+</body>
+</html>

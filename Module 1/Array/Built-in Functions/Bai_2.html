@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2:</title>
+</head>
+<body>
+    <div id="res"></div>
+    <script>
+        let numbers = prompt("Enter your number: ");
+        let str = numbers.toString();
+        let res = "";
+        for(let i = 0; i < str.length; i++){
+            if(str[i] % 2 === 0 && str[i + 1] % 2 === 0){
+                res += str[i] + "-";
+            }
+            else{
+                res += str[i];
+            }
+        }
+        document.getElementById("res").innerHTML = res;
+    </script>
+</body>
+</html>

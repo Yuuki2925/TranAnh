@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8:</title>
+</head>
+<body>
+<div id="res"></div>
+<script>
+    let numbers = parseInt(prompt("Nhập số: "));
+    let arr = [];
+    for (let i = 0; i < numbers; i++) {
+        arr[i] = parseInt(prompt("[" + i + "]"));
+    }
+    arr.sort();
+    document.getElementById("res").innerHTML = "Mảng sắp xếp giảm dần là: " + arr.reverse();
+</script>
+</body>
+</html>

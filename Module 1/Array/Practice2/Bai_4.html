@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 4:</title>
+</head>
+<body>
+<div id="res"></div>
+<script>
+    let str = prompt("Nhập chuỗi:");
+    str = str.trim();
+    let cnt = 0;
+    if(str !== ""){
+        for(let i = 0; i < str.length; i++){
+            if(str[i] === " "){
+                cnt++;
+            }
+        }
+        cnt += 1;
+    }
+    else {
+        document.getElementById("res").innerHTML = "Số từ là: 0";
+    }
+    document.getElementById("res").innerHTML = "Số từ là: " + cnt;
+</script>
+</body>
+</html>

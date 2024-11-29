@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7:</title>
+</head>
+<body>
+<div id="res"></div>
+<script>
+    let numbers = parseInt(prompt("Nhập số: "));
+    let arr = [];
+    for (let i = 0; i < numbers; i++) {
+        arr[i] = parseInt(prompt("[" + i + "]"));
+    }
+    let check = parseInt(prompt("Nhap so muon kiem tra: "));
+    let found = false;
+    let index = -1;
+    for (let i = 0; i < numbers; i++) {
+        if (check === arr[i]) {
+            index = i;
+            found = true;
+            break;
+        }
+    }
+    if (found) {
+        for (let i = index; i < numbers; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr.pop();
+        arr.push('0');
+        document.getElementById("res").innerHTML = arr.join(", ");
+    }
+    else{
+        document.getElementById("res").innerHTML = "Số không có trong mảng.";
+    }
+
+</script>
+</body>
+</html>
