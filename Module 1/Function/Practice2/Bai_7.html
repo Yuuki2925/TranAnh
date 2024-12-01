@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7:</title>
+</head>
+<body>
+    <div id="res"></div>
+    <script>
+        function Swapp(a, b){
+            let tmp = a;
+            a = b;
+            b = tmp;
+            return "a = " + a + ", b = " + b;
+        }
+        let a = parseInt(prompt("Nhập số: "));
+        let b = parseInt(prompt("Nhập số: "));
+        document.getElementById("res").innerHTML = "Sau khi đổi chỗ: " + Swapp(a, b);
+    </script>
+</body>
+</html>

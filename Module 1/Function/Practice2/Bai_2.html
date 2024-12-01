@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2:</title>
+</head>
+<body>
+    <script>
+        function Circle(r){
+            const PI = 3.14;
+            let s = PI * r * r;
+            let p = 2 * PI * r;
+            document.write("Diện tích hình tròn là: " + s.toFixed(2) + "<br>");
+            document.write("Chu vi hình tròn là: " + p.toFixed(2));
+        }
+        let r = Number(prompt("Nhập bán kính: "));
+        Circle(r);
+    </script>
+</body>
+</html>

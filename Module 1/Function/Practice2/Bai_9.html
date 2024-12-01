@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9:</title>
+</head>
+<body>
+<script>
+    let numbers = parseInt(prompt("Nhập số lượng phần tử:"));
+    function checkKyTu(arr, check) {
+        let cnt = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (check === arr[i]) {
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+
+    let arr = [];
+    for (let i = 0; i < numbers; i++) {
+        arr[i] = prompt("Nhập phần tử thứ " + (i + 1) + ":");
+    }
+
+    let check = prompt("Nhập ký tự bạn muốn kiểm tra:");
+    let count = checkKyTu(arr, check);
+
+    document.write(`Ký tự '${check}' xuất hiện ${count} lần trong mảng.`);
+</script>
+</body>
+</html>
