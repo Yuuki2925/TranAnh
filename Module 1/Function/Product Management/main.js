@@ -20,7 +20,7 @@ function Show() {
 
 // Ham them san pham
 function addProduct() {
-    let add_product = document.getElementById("product").value;
+    let add_product = document.getElementById("product").value.trim();
     if (add_product) {
         product_arr.push(add_product);
         document.getElementById("product").value = "";
@@ -43,6 +43,9 @@ function EditProduct(index){
 
 // Ham xoa san pham
 function DeleteProduct(index){
-    product_arr.splice(index, 1);
+    let check = confirm("Bạn có chắc chắn muốn xóa sản phẩm không?");
+    if(check) {
+        product_arr.splice(index, 1);
+    }
     Show();
 }
