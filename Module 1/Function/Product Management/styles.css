@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h2, h3 {
+    color: #0056b3;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Vùng nhập sản phẩm */
+.Product_text {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.Product_text input {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.Product_text button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Product_text button:hover {
+    background-color: #0056b3;
+}
+
+#show li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#show li:last-child {
+    border-bottom: none;
+}
+
+#btn_edit {
+    background-color: #bf9e3e;
+}
+
+#btn_edit:hover {
+    background-color: #ffc100;
+}
+
+#btn_delete {
+    background-color: #97303a;
+}
+
+#btn_delete:hover {
+    background-color: #ff0019;
+}

@@ -2,14 +2,14 @@ let product_arr = [];
 
 // Hàm hiển thị sản phẩm
 function Show() {
-    let output = "";  // Biến này sẽ lưu nội dung các sản phẩm
+    let output = "";
     for (let i = 0; i < product_arr.length; i++) {
         output += `
             <li type="1">
                 ${product_arr[i]}
                 <span>
-                    <button type="submit" onclick="EditProduct(${i})">Edit</button>
-                    <button type="submit" onclick="DeleteProduct(${i})">Delete</button>
+                    <button type="submit" id="btn_edit" onclick="EditProduct(${i})">Edit</button>
+                    <button type="submit" id ="btn_delete" onclick="DeleteProduct(${i})">Delete</button>
                 </span>
             </li>
         `;
@@ -32,11 +32,17 @@ function addProduct() {
 }
 
 // Ham chinh sua ten san pham
-function EditProduct(){
-
+function EditProduct(index){
+    let editName = prompt("Nhập tên mới: ");
+    while(editName === ""){
+        editName = prompt("Không hợp lệ. Vui lòng nhập lại tên mới: ");
+    }
+    product_arr[index] = editName;
+    Show();
 }
 
 // Ham xoa san pham
-function DeleteProduct(){
-
+function DeleteProduct(index){
+    product_arr.splice(index, 1);
+    Show();
 }
