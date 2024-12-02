@@ -15,7 +15,7 @@ hr {
     margin: 20px 0;
 }
 
-/* Vùng nhập sản phẩm */
+
 .Product_text {
     text-align: center;
     margin: 20px 0;
@@ -58,17 +58,24 @@ hr {
 }
 
 #btn_edit {
-    background-color: #bf9e3e;
+    background-color: #ffb600;
 }
 
 #btn_edit:hover {
-    background-color: #ffc100;
+    background-color: #daa300;
 }
 
 #btn_delete {
-    background-color: #97303a;
+    background-color: #ff0017;
 }
 
 #btn_delete:hover {
-    background-color: #ff0019;
+    background-color: #ae2533;
+}
+
+#btn_edit, #btn_delete{
+    border: none;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
 }
