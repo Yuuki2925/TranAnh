@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+.container {
+    position: relative;
+    top: 200px;
+    line-height: 50px;
+    margin-left: 45%;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230411/pngtree-beautiful-moon-background-image_2357383.jpg");
+}
+
+input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigHLmVv0q-f3ut6gu-B4NebiXZdoQtYShyphenhyphen6eV8lPIY37GoIG5vX45l4h95WxvapIwnfQoFZoYMPEoJ1RLT8YjQyVrNa0B3h7OExjC4d_6mj43kIel54ubXlkkXPisqTr4zFHgSsQNkPJ28/s1600/11.png");
+
+}
+
+input[type="checkbox"]:checked:before {
+    left: 55px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://uyen.vn/wp-content/uploads/2019/08/ve-ky-hieu-am-duong-bat-quai-bang-illustrator.jpg");
+}
+
+input[type="checkbox"]:checked {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn.aicschool.edu.vn/wp-content/uploads/2024/05/hinh-anh-mat-troi-dep-nhat-1.jpg");
+}

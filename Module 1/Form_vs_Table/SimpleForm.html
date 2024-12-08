@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order form</title>
+    <style>
+        body {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+
+        select {
+            width: 80px;
+        }
+
+        .phone-input {
+            width: 50px;
+            text-align: center;
+        }
+
+        .email-input {
+            width: 300px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<form action="simpleform.html" method="get">
+    <h2><b>Order Form</b></h2>
+
+    <p>What would you like to buy</p>
+    <select>
+        <option>A</option>
+        <option>B (+ 1$)</option>
+        <option>C (+ 2$)</option>
+    </select>
+
+    <p>How many would you like to order?</p>
+    <input type="radio" name="rd"> 1 - $10<br>
+    <input type="radio" name="rd"> 2 - $20<br>
+    <input type="radio" name="rd"> 3 - $25<br>
+
+    <p>Name <span style="color: red">*</span></p>
+    <input type="text" name="firstname" placeholder="FirstName">
+    <input type="text" name="lastname" placeholder="LastName">
+
+    <p>Email</p>
+    <input type="email" name="eml" class="email-input">
+
+    <p>Phone Number</p>
+    <input type="tel" name="phone1" class="phone-input" maxlength="3"> -
+    <input type="tel" name="phone2" class="phone-input" maxlength="3"> -
+    <input type="tel" name="phone3" class="phone-input" maxlength="4">
+
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>

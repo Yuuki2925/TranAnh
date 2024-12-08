@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var name = prompt("Nhập tên: ");
+    if (name == "Admin") {
+        let pass = prompt("Nhập mật khẩu: ");
+        if (pass == "TheMaster") {
+            alert("Welcome");
+        } else if (pass == null) {
+            alert("Canceled");
+        } else {
+            alert("Wrong password");
+        }
+    } else if (name == null) {
+        alert("Canceled");
+    } else {
+        alert("I don't know you!");
+    }
+</script>
+</body>
+</html>

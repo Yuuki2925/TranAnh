@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12:</title>
+</head>
+<body>
+<script>
+    let tienGoc = parseFloat(prompt("Nhập số tiền ban đầu (VND):"));
+    let soThang = parseInt(prompt("Nhập số tháng cho vay:"));
+    let laiSuatHangThang = parseFloat(prompt("Nhập lãi suất hàng tháng (%):"));
+
+    let tongTien = tienGoc;
+
+    if (soThang > 0 && soThang <= 12) {
+        tongTien += tongTien * laiSuatHangThang / 100;
+    }
+    alert(`Tổng số tiền sau ${soThang} tháng là: ${tongTien.toFixed(2)} VND`);
+
+</script>
+</body>
+</html>

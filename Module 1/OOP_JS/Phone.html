@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phone</title>
+</head>
+<body>
+<h1>Mobile Phone Simulation</h1>
+
+<div id="phone1">
+    <h2>Phone 1</h2>
+    <p>Battery: <span id="battery1">100</span>%</p>
+    <p>Status: <span id="status1">Off</span></p>
+    <textarea id="draft1" placeholder="Compose a message"></textarea>
+    <button onclick="powerOn(1)">Power On</button>
+    <button onclick="powerOff(1)">Power Off</button>
+    <button onclick="charge(1)">Charge Battery</button>
+    <button onclick="sendMessage(1)">Send Message</button>
+    <h3>Inbox</h3>
+    <div id="inbox1"></div>
+    <h3>Sent Messages</h3>
+    <div id="sent1"></div>
+</div>
+<hr>
+<div id="phone2">
+    <h2>Phone 2</h2>
+    <p>Battery: <span id="battery2">100</span>%</p>
+    <p>Status: <span id="status2">Off</span></p>
+    <textarea id="draft2" placeholder="Compose a message"></textarea>
+    <button onclick="powerOn(2)">Power On</button>
+    <button onclick="powerOff(2)">Power Off</button>
+    <button onclick="charge(2)">Charge Battery</button>
+    <button onclick="sendMessage(2)">Send Message</button>
+    <h3>Inbox</h3>
+    <div id="inbox2"></div>
+    <h3>Sent Messages</h3>
+    <div id="sent2"></div>
+</div>
+
+<script>
+    class Mobile {
+        constructor(id) {
+            this.id = id;
+            this.battery = 100;
+            this.isOn = false;
+            this.inbox = [];
+            this.sentMessages = [];
+        }
+
+        checkPower() {
+            return this.isOn ? "On" : "Off";
+        }
+
+        updateUI() {
+            document.getElementById(`battery${this.id}`).innerText = this.battery;
+            document.getElementById(`status${this.id}`).innerText = this.checkPower();
+            document.getElementById(`inbox${this.id}`).innerText = this.inbox.join("\n");
+            document.getElementById(`sent${this.id}`).innerText = this.sentMessages.join("\n");
+        }
+
+        powerOn() {
+            if (this.battery > 0) {
+                this.isOn = true;
+                this.updateUI();
+            } else {
+                alert("Battery is dead. Please charge it.");
+            }
+        }
+
+        powerOff() {
+            this.isOn = false;
+            this.updateUI();
+        }
+
+        chargeBattery() {
+            this.battery = 100;
+            this.updateUI();
+        }
+
+        reduceBattery() {
+            if (this.battery > 0) {
+                this.battery--;
+            } else {
+                alert("Battery is dead.");
+                this.isOn = false;
+            }
+            this.updateUI();
+        }
+
+        receiveMessage(message) {
+            if (!this.isOn) {
+                alert("The phone is off, cannot receive messages.");
+                return;
+            }
+            this.inbox.push(message);
+            this.reduceBattery();
+            this.updateUI();
+        }
+
+        sendMessage(receiver, message) {
+            if (!this.isOn) {
+                alert("The phone is off, cannot send messages.");
+                return;
+            }
+            if (!message) {
+                alert("Message is empty.");
+                return;
+            }
+            receiver.receiveMessage(message);
+            this.sentMessages.push(message);
+            this.reduceBattery();
+            this.updateUI();
+        }
+    }
+
+    const phone1 = new Mobile(1);
+    const phone2 = new Mobile(2);
+
+    function powerOn(phoneId) {
+        if (phoneId === 1) {
+            phone1.powerOn();
+        }
+        if (phoneId === 2) {
+            phone2.powerOn();
+        }
+    }
+
+    function powerOff(phoneId) {
+        if (phoneId === 1) {
+            phone1.powerOff();
+        }
+        if (phoneId === 2) {
+            phone2.powerOff();
+        }
+    }
+
+    function charge(phoneId) {
+        if (phoneId === 1) {
+            phone1.chargeBattery();
+        }
+        if (phoneId === 2) {
+            phone2.chargeBattery();
+        }
+    }
+
+    function sendMessage(phoneId) {
+        const message = document.getElementById(`draft${phoneId}`).value;
+        if (phoneId === 1) {
+            phone1.sendMessage(phone2, message);
+        }
+        if (phoneId === 2) {
+            phone2.sendMessage(phone1, message);
+        }
+        document.getElementById(`draft${phoneId}`).value = "";
+    }
+</script>
+
+</body>
+</html>

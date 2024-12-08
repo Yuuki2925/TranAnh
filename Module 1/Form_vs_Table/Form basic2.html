@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        body {
+            background-color: khaki;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            vertical-align: top;
+            margin-right: 10px;
+        }
+
+        .button-group {
+            margin-left: 115px;
+            margin-top: 10px;
+        }
+
+        h1 {
+            color: blue;
+            background-color: aqua;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Đăng kí học viên</h1>
+<form>
+    <p>
+        <label for="username">Họ và tên</label>
+        <input type="text" name="name1" id="username">
+    </p>
+    <p>
+        <label for="date">Ngày sinh</label>
+        <input type="date" name="ngay" id="date">
+    </p>
+    <p>
+        <label for="gender">Giới tính</label>
+        <input type="radio" name="gt" id="gender"> Nam
+        <input type="radio" name="gt" id="gender1"> Nữ
+    </p>
+    <p>
+        <label>Địa chỉ</label>
+        <textarea rows="4" cols="30"></textarea>
+    </p>
+    <p>
+        <label>Lớp</label>
+        <select>
+            <option>--Chọn lớp--</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select>
+    </p>
+    <p>
+        <label for="eml">Email</label>
+        <input type="email" name="email" id="eml">
+    </p>
+    <p>
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" name="phone" id="phone">
+    </p>
+    <p class="button-group">
+        <input type="submit" value="Đăng kí">
+        <button type="reset">Nhập lại</button>
+    </p>
+</form>
+</body>
+</html>

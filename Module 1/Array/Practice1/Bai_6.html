@@ -5,26 +5,25 @@
     <title>Bài 6:</title>
 </head>
 <body>
-  <script>
+<script>
     let numbers = parseInt(prompt("Nhập số: "));
     let arr = [];
-    for(let i = 0; i < numbers; i++){
-      arr[i] = parseInt(prompt("[" + i + "]"));
+    for (let i = 0; i < numbers; i++) {
+        arr[i] = parseInt(prompt("[" + i + "]"));
     }
     let check = parseInt(prompt("Nhap 1 so:"));
     let found = false;
-    for(let i = 0; i < numbers; i++){
-      if(check === arr[i]){
-        found = true;
-        break;
-      }
+    for (let i = 0; i < numbers; i++) {
+        if (check === arr[i]) {
+            found = true;
+            break;
+        }
     }
-    if(!found){
-      alert("V is not in the array");
+    if (!found) {
+        alert("V is not in the array");
+    } else {
+        alert("V is in the array");
     }
-    else{
-      alert("V is in the array");
-    }
-  </script>
+</script>
 </body>
 </html>

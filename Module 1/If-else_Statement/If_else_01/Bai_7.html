@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7:</title>
+</head>
+<body>
+<script>
+    const thuebao = 25000;
+    const First300 = 600;
+    const After300 = 400;
+    let minutes = Number(prompt("Nhập số phút gọi: "));
+    let res;
+    if (minutes <= 300) {
+        res = thuebao + First300 * minutes;
+    } else {
+        res = 300 * First300 + thuebao + (minutes - 300) * After300;
+    }
+    alert("Số cước phí là: " + res);
+</script>
+</body>
+</html>

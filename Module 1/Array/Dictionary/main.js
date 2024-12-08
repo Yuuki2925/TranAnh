@@ -8,8 +8,7 @@ function Translate() {
         if (eng_arr[i] === inputWord) {
             translation = vie_arr[i];
             break;
-        }
-        else if(vie_arr[i] === inputWord){
+        } else if (vie_arr[i] === inputWord) {
             translation = eng_arr[i];
             break;
         }

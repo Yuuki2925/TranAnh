@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<div id="doF" style="font-size: 30px"></div>
+<div id="kelvin" style="font-size: 30px"></div>
+<script>
+    class Temperature {
+        constructor(c) {
+            this.c = c;
+        }
+
+        getCtoF() {
+            return (this.c * 9) / 5 + 32;
+        }
+
+        getCtoKelvin() {
+            return this.c + 273.15;
+        }
+    }
+
+    const temperature = new Temperature(25);
+    document.getElementById("doF").textContent = `25°C = ` + temperature.getCtoF() + "°F";
+    document.getElementById("kelvin").textContent = `25°C = ` + temperature.getCtoKelvin() + "K";
+</script>
+</body>
+</html>

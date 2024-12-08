@@ -5,22 +5,22 @@
     <title>Bài 2:</title>
 </head>
 <body>
-  <div id="res"></div>
-  <script>
+<div id="res"></div>
+<script>
     let numbers = parseInt(prompt("Nhập số:"));
     let arr = [];
-    for(let i = 0; i < numbers; i++){
-      arr[i] = prompt("[" + i + "]");
+    for (let i = 0; i < numbers; i++) {
+        arr[i] = prompt("[" + i + "]");
     }
     let index = 0;
     let max = arr[0];
-    for(let i = 0; i < numbers; i++){
-      if(arr[i] > max){
-        max = arr[i];
-        index = i;
-      }
+    for (let i = 0; i < numbers; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+            index = i;
+        }
     }
     document.getElementById("res").innerHTML = `Phần tử có giá trị lớn nhất trong mảng ${max} và vị trí của phần tử đó là: ${index}`
-  </script>
+</script>
 </body>
 </html>

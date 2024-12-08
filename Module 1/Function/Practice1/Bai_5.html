@@ -11,16 +11,18 @@
 <script>
     const star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
     const star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
-    function CheckStar(star){
+
+    function CheckStar(star) {
         let arr = [];
         let found = "Không tìm thấy sao";
-        for(let i = 0; i < star1.length; i++){
-            if(star === star1[i]){
+        for (let i = 0; i < star1.length; i++) {
+            if (star === star1[i]) {
                 found = star2[i];
             }
         }
         return found;
     }
+
     let star = prompt("Nhập tên sao: ");
     document.write(CheckStar(star));
 </script>

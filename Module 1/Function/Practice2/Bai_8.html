@@ -6,12 +6,13 @@
 </head>
 <body>
 <script>
-    function Reverse(nums){
+    function Reverse(nums) {
         return nums.reverse().join(", ");
     }
+
     let numbers = parseInt(prompt("Nhập số lượng phần tử:"));
     let arr = [];
-    for(let i = 0; i < numbers; i++){
+    for (let i = 0; i < numbers; i++) {
         arr[i] = prompt("Nhập phần tử thứ " + (i + 1) + ":");
     }
     document.write("Mảng sau khi đảo ngược: " + Reverse(arr));

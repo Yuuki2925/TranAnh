@@ -1,13 +1,13 @@
-function Confirm(answer){
+function Confirm(answer) {
     let res = "";
-    if(answer){
+    if (answer) {
         res = "Excellent. We'll play a nice game of chess.";
-    }
-    else{
+    } else {
         res = "Maybe later then.";
     }
     return res;
 }
+
 let confirmAns = confirm("Shall we play a game?");
 let theAns = Confirm(confirmAns);
 alert(theAns);

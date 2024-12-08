@@ -32,9 +32,9 @@ function addProduct() {
 }
 
 // Ham chinh sua ten san pham
-function EditProduct(index){
+function EditProduct(index) {
     let editName = prompt("Nhập tên mới: ");
-    while(editName === ""){
+    while (editName === "") {
         editName = prompt("Không hợp lệ. Vui lòng nhập lại tên mới: ");
     }
     product_arr[index] = editName;
@@ -42,9 +42,9 @@ function EditProduct(index){
 }
 
 // Ham xoa san pham
-function DeleteProduct(index){
+function DeleteProduct(index) {
     let check = confirm("Bạn có chắc chắn muốn xóa sản phẩm không?");
-    if(check) {
+    if (check) {
         product_arr.splice(index, 1);
     }
     Show();

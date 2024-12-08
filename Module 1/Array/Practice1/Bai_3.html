@@ -5,19 +5,19 @@
     <title>Bài 3:</title>
 </head>
 <body>
-    <div id="res"></div>
-    <script>
-        let numbers = [4,3,1,8,7,6,9,10];
-        let max = numbers[0];
-        let avg = 0;
-        for(let i = 0; i < numbers.length; i++){
-            avg += numbers[i];
-            if(numbers[i] > max){
-                max = numbers[i];
-            }
+<div id="res"></div>
+<script>
+    let numbers = [4, 3, 1, 8, 7, 6, 9, 10];
+    let max = numbers[0];
+    let avg = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        avg += numbers[i];
+        if (numbers[i] > max) {
+            max = numbers[i];
         }
-        avg /= numbers.length;
-        document.getElementById("res").innerHTML = `Max = ${max} <br> Avg = ${avg}`;
-    </script>
+    }
+    avg /= numbers.length;
+    document.getElementById("res").innerHTML = `Max = ${max} <br> Avg = ${avg}`;
+</script>
 </body>
 </html>

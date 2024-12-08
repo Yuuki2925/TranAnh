@@ -5,16 +5,17 @@
     <title>Bai 3:</title>
 </head>
 <body>
-    <script>
-        function giaiThua(n){
-            let res = 1;
-            for (let i = 1; i <= n; i++){
-                res *= i;
-            }
-            return res;
+<script>
+    function giaiThua(n) {
+        let res = 1;
+        for (let i = 1; i <= n; i++) {
+            res *= i;
         }
-        let n = parseInt(prompt("Nhập số: "));
-        alert(`Giai thừa của ${n} là: ` + giaiThua(n));
-    </script>
+        return res;
+    }
+
+    let n = parseInt(prompt("Nhập số: "));
+    alert(`Giai thừa của ${n} là: ` + giaiThua(n));
+</script>
 </body>
 </html>

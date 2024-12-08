@@ -9,19 +9,17 @@
 </body>
 </html>
 <script>
-  let nhietDo = parseInt(prompt("Nhập n: "));
-  while(true){
-    if(nhietDo >= 100){
-      alert("Giảm nhiệt độ!!");
-      break;
+    let nhietDo = parseInt(prompt("Nhập n: "));
+    while (true) {
+        if (nhietDo >= 100) {
+            alert("Giảm nhiệt độ!!");
+            break;
+        } else if (nhietDo <= 20) {
+            alert("Tăng nhiệt độ!!");
+            break;
+        } else {
+            alert("Nhiệt độ bình thường");
+            break;
+        }
     }
-    else if(nhietDo <= 20){
-      alert("Tăng nhiệt độ!!");
-      break;
-    }
-    else{
-      alert("Nhiệt độ bình thường");
-      break;
-    }
-  }
 </script>

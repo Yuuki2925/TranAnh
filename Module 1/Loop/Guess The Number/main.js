@@ -17,8 +17,7 @@ function Clickk() {
         if (guess === res) {
             alert(`Chúc mừng! Bạn đã đoán đúng số sau ${cnt} lần!`);
             return;
-        }
-        else if (guess < res) {
+        } else if (guess < res) {
             alert("Số bạn nhập nhỏ hơn kết quả.");
         } else {
             alert("Số bạn nhập lớn hơn kết quả.");

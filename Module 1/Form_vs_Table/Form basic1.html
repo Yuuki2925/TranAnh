@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your hobbies</title>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-family: "Times New Roman";
+            text-align: center;
+            font-size: x-large;
+            background-color: orangered;
+            color: white;
+            padding: 3px;
+            width: 52.7%;
+            margin: auto;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid white;
+            background-color: white;
+        }
+
+        div, p {
+            margin-bottom: 10px;
+        }
+
+        label {
+            color: blue;
+        }
+
+        .check {
+            color: darkorange;
+            margin-left: 60px;
+        }
+
+        .check input {
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>SỞ THÍCH CỦA BẠN</h1>
+<form>
+    <div>
+        <label for="username"> Họ và tên </label>
+        <input type="text" name="name" id="username">
+    </div>
+    <p style="margin-left: 28px">
+        <label for="email">Email</label>
+        <input type="email" name="eml" id="email">
+    </p>
+    <div>
+        <label for="checkbox1">Sở thích</label>
+        <div class="check">
+            <input type="checkbox" name="cb1" id="checkbox1"> Thể thao
+            <input type="checkbox" name="cb2" id="checkbox2"> Âm nhạc
+            <input type="checkbox" name="cb3" id="checkbox3"> Đọc sách<br>
+            <input type="checkbox" name="cb4" id="checkbox4"> Lướt web
+            <input type="checkbox" name="cb5" id="checkbox5"> Chơi game
+            <input type="checkbox" name="cb6" id="checkbox6"> Điện ảnh<br>
+            <input type="checkbox" name="cb7" id="checkbox7"> Du lịch
+        </div>
+    </div>
+    <div style="margin-left: 60px">
+        <input type="submit" value="Gửi thông tin">
+        <button type="reset">Nhập lại</button>
+    </div>
+</form>
+</body>
+</html>

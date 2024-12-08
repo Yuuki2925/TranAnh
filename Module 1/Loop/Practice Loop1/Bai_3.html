@@ -5,17 +5,17 @@
     <title>Bài 3:</title>
 </head>
 <body>
-    <div id="res"></div>
+<div id="res"></div>
 </body>
 </html>
 <script>
     let text = "1 1 ";
     let fi1 = 1, fi2 = 1;
-    for(let i = 3; i <= 20; i++){
+    for (let i = 3; i <= 20; i++) {
         let fin = fi1 + fi2;
         text += fin + " ";
         fi1 = fi2;
         fi2 = fin;
     }
-    document.getElementById("res").innerHTML ="Dãy Fibonacci là: " + text;
+    document.getElementById("res").innerHTML = "Dãy Fibonacci là: " + text;
 </script>

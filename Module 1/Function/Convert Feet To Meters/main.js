@@ -1,6 +1,7 @@
 function feetToMeter(feet) {
     return feet * 0.3048;
 }
+
 function meterToFeet(meter) {
     return meter * 3.279;
 }
