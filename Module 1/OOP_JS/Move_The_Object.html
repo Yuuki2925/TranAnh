@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Move The Object</title>
+</head>
+<body>
+<div id="game"></div>
+<script>
+    class Sonic {
+        constructor(img, top, left, size) {
+            this.img = img;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+        }
+
+        getSonicElement() {
+            return "<img width='"
+                + this.size + "' height='"
+                + this.size + "' src='"
+                + this.img + "' style='top: "
+                + this.top + "px; left: "
+                + this.left + "px; position: absolute;' />";
+        }
+
+        moveRight() {
+            this.left += 100;
+        }
+
+        moveLeft() {
+            this.left -= 100;
+        }
+
+        moveUp() {
+            this.top -= 100;
+        }
+
+        moveBottom() {
+            this.top += 100;
+        }
+    }
+
+    let sonic = new Sonic('IMG/sonic.png', 20, 20, 200);
+
+    function start() {
+        if (sonic.left < window.innerWidth - sonic.size && sonic.top === 20) {
+            sonic.moveRight();
+        } else if (sonic.left >= window.innerWidth - sonic.size && sonic.top < window.innerHeight - sonic.size) {
+            sonic.moveBottom();
+        } else if (sonic.top >= window.innerHeight - sonic.size && sonic.left > 20) {
+            sonic.moveLeft();
+        } else if (sonic.left <= 20 && sonic.top > 20) {
+            sonic.moveUp();
+        }
+
+        document.getElementById("game").innerHTML = sonic.getSonicElement();
+        setTimeout(start, 200);
+    }
+
+    start();
+</script>
+</body>
+</html>
