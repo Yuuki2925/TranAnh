@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calender</title>
+    <style>
+        body {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        table {
+            border: 2px solid gray;
+            border-spacing: 10px;
+            border-collapse: collapse;
+            width: 75%;
+            height: auto;
+            margin: auto;
+        }
+
+        th, td {
+            border: 2px solid gray;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .lunar {
+            font-size: 12px;
+            vertical-align: bottom;
+        }
+
+        .day1 {
+            color: red;
+        }
+
+        .day2 {
+            color: blue;
+        }
+
+        .fix1 {
+            border-left: 2px solid white;
+            border-right: 2px solid white;
+        }
+
+        .fix3 {
+            background-color: red;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .fix4 {
+            background-color: blue;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .fix2 {
+            background-color: orange;
+            color: white;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+<h1>Tháng 10 - October</h1>
+<table class="calender">
+    <tr>
+        <th class="fix3">C.Nhật</th>
+        <th class="fix2">T.Hai</th>
+        <th class="fix2">T.Ba</th>
+        <th class="fix2">T.Tư</th>
+        <th class="fix2">T.Năm</th>
+        <th class="fix2">T.Sáu</th>
+        <th class="fix4">T.Bảy</th>
+    </tr>
+    <tr>
+        <td class="fix1"><span class="day1">Sun</span></td>
+        <td class="fix1">Mon</td>
+        <td class="fix1">Tue</td>
+        <td class="fix1">Wed</td>
+        <td class="fix1">Thu</td>
+        <td class="fix1">Fri</td>
+        <td class="fix1"><span class="day2">Sat</span></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1<span class="lunar">13</span></td>
+        <td>2<span class="lunar">14</span></td>
+        <td><span class="day2">3</span><span class="lunar">15</span></td>
+    </tr>
+    <tr>
+        <td><span class="day1">4</span><span class="lunar">16</span></td>
+        <td>5<span class="lunar">17</span></td>
+        <td>6<span class="lunar">18</span></td>
+        <td>7<span class="lunar">19</span></td>
+        <td>8<span class="lunar">20</span></td>
+        <td>9<span class="lunar">21</span></td>
+        <td><span class="day2">10</span><span class="lunar">22</span></td>
+    </tr>
+    <tr>
+        <td><span class="day1">11</span><span class="lunar">23</span></td>
+        <td>12<span class="lunar">24</span></td>
+        <td>13<span class="lunar">25</span></td>
+        <td>14<span class="lunar">26</span></td>
+        <td>15<span class="lunar">27</span></td>
+        <td>16<span class="lunar">28</span></td>
+        <td><span class="day2">17</span><span class="lunar">29</span></td>
+    </tr>
+    <tr>
+        <td><span class="day1">18</span><span class="lunar">1/9</span></td>
+        <td>19<span class="lunar">2</span></td>
+        <td>20<span class="lunar">3</span></td>
+        <td>21<span class="lunar">4</span></td>
+        <td>22<span class="lunar">5</span></td>
+        <td>23<span class="lunar">6</span></td>
+        <td><span class="day2">24</span><span class="lunar">7</span></td>
+    </tr>
+    <tr>
+        <td><span class="day1">25</span><span class="lunar">8</span></td>
+        <td>26<span class="lunar">9</span></td>
+        <td>27<span class="lunar">10</span></td>
+        <td>28<span class="lunar">11</span></td>
+        <td>29<span class="lunar">12</span></td>
+        <td>30<span class="lunar">13</span></td>
+        <td><span class="day2">31</span><span class="lunar">14</span></td>
+    </tr>
+</table>
+</body>
+</html>

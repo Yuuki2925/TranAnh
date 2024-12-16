@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7:</title>
+</head>
+<body>
+<script>
+    let a = Number(prompt("Nhập a: "));
+    let b = Number(prompt("Nhập b: "));
+    let c = Number(prompt("Nhập c: "));
+    let x1, x2;
+    if (a != 0) {
+        let delta = b ** 2 - 4 * a * c;
+        if (delta < 0) {
+            alert("Phương trình vô nghiệm");
+        } else if (delta === 0) {
+            x1 = -b / 2 * a;
+            alert("Phương trình có nghiệm kép x1 = x2 = " + x1);
+        } else {
+            x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            alert("Phương trình có 2 nghiệm phân biệt: " + 'x1 = ' + x1.toFixed(2) + 'x2 = ' + x2.toFixed(2));
+        }
+    } else {
+        alert("Đây không phải phương trình bậc 2. Vui lòng nhập lại");
+    }
+</script>
+</body>
+</html>

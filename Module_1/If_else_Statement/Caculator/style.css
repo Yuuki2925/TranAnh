@@ -1,0 +1,29 @@
+#display {
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    margin: 5px;
+    cursor: pointer;
+    color: blue;
+    background-color: beige;
+}
+
+table {
+    border: 10px solid chocolate;
+    margin-left: 40%;
+}
+
+#delete {
+    color: red;
+    background-color: beige;
+    font-weight: bold;
+}

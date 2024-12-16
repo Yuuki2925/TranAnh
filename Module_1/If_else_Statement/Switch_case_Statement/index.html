@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch case</title>
+    <style>
+        label {
+            margin: 10px;
+            padding-left: 20px;
+        }
+
+        input {
+            margin: 7px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label for="month">Nhập tháng(1 - 12): </label> <br>
+    <input type="number" name="number1" id="month" placeholder="Nhập tháng"> <br>
+    <label for="year">Nhập năm: </label><br>
+    <input type="number" name="year1" id="year" placeholder="Nhập năm">
+    <button type="submit" onclick="Day()">Tính số ngày</button>
+</div>
+<div id="res"></div>
+</body>
+</html>
+<script src="main.js"></script>

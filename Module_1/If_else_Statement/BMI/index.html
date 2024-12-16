@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Body mass index</title>
+    <style>
+        .input1 {
+            margin-left: 5px;
+            padding: 7px;
+        }
+
+        h1 {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Tính BMI</h1>
+<div class="input1">
+    <label for="kg">Nhập cân nặng: (kg)</label>
+    <input type="number" name="kg" id="kg">
+</div>
+<div class="input1">
+    <label for="m">Nhập chiều cao: (m)</label>
+    <input type="number" name="m" id="m">
+</div>
+<button type="submit" onclick="Check()">Check</button>
+<div id="check"></div>
+</body>
+</html>
+<script src="main.js"></script>

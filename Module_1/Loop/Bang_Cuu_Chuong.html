@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+    <style>
+        h1 {
+            margin-left: 400px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1><b>Bảng cửu chương</b></h1>
+<div id="dis"></div>
+</body>
+</html>
+<script>
+    let sout = "<table border = 1px width = 1000px height = 300px>";
+    for (let i = 1; i <= 10; i++) {
+        sout += "<tr>";
+        for (let j = 1; j <= 10; j++) {
+            sout += "<td>" + j + " * " + i + " = " + i * j + "</td>";
+        }
+        sout += "</tr>";
+    }
+    sout += "</table>";
+    document.getElementById("dis").innerHTML = sout;
+</script>

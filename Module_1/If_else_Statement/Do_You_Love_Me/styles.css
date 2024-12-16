@@ -1,0 +1,31 @@
+h1 {
+    width: 30%;
+    margin: auto;
+    color: blue;
+    font-family: "Arial Black";
+}
+
+input[value="Yes"] {
+    width: 60px;
+    margin: 0px 0px 0px 550px;
+    padding: 5px;
+    color: #df5c22;
+    background-color: rgba(16, 14, 14, 0.82);
+    font-weight: bold;
+}
+
+input[value="No"] {
+    width: 60px;
+    margin: 0px 0px 0px 20px;
+    padding: 5px;
+    color: #df5c22;
+    background-color: rgba(16, 14, 14, 0.82);
+    font-weight: bold;
+    position: absolute;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin: 20px 0px 50px 470px;
+}

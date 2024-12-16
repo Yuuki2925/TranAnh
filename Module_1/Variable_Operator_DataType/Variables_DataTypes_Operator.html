@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến, kiểu dữ liệu và toán tử</title>
+    <style>
+        .ex1 label, .ex1 input{
+            margin: 10px;
+            width: 60px;
+            display: inline-block;
+        }
+        .ex2 label, .ex2 input{
+            margin: 10px;
+        }
+        .ex3 label, .ex3 input{
+            margin: 10px;
+        }
+        .ex4 label, .ex4 input{
+            margin: 10px;
+        }
+        button{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Bài 1:</h3>
+    <div class = "ex1">
+        <div style="color: red"><b>Nhập điểm sinh viên:</b></div>
+        <div>
+            <label for="number1">Vật lý</label>
+            <input type="number" name="number1" id="number1" max="10" min="0">
+        </div>
+        <div>
+            <label for="number2">Hóa học</label>
+            <input type="number" name="number2" id="number2" max="10" min="0">
+        </div>
+        <div>
+            <label for="number3">Sinh học</label>
+            <input type="number" name="number3" id="number3" max="10" min="0">
+        </div>
+        <button type="submit" onclick="Average()">Average</button>
+        <button type="reset" onclick="Reset1()">Reset</button>
+        <div id="result1"></div>
+    </div>
+    <h3>Bài 2:</h3>
+    <div class="ex2">
+        <div style="color: red"><b>Chuyển độ C sang độ F:</b></div>
+        <div>
+            <label for="celsius"></label>
+            <input type="number" name="celsius" id="celsius" placeholder="Nhập độ C">
+            <button type="submit" onclick="Convert()">Convert</button>
+            <button type="reset" onclick="Reset2()">Reset</button>
+        </div>
+        <div id="result2"></div>
+    </div>
+    <h3>Bài 3:</h3>
+    <div class="ex3">
+        <div style="color: red"><b>Diện tích hình tròn là:</b></div>
+        <div>
+            <label for="circle1"></label>
+            <input type="number" name="circle1" id="circle1" placeholder="Nhập bán kính">
+            <button type="submit" onclick="Area()">Result</button>
+            <button type="reset" onclick="Reset3()">Reset</button>
+        </div>
+        <div id="result3"></div>
+    </div>
+    <h3>Bài 4:</h3>
+    <div class="ex4">
+        <div style="color: red"><b>Chu vi hình tròn là:</b></div>
+        <div>
+            <label for="circle2"></label>
+            <input type="number" name="circle2" id="circle2" placeholder="Nhập đường kính">
+            <button type="submit" onclick="Perimete()">Result</button>
+            <button type="reset" onclick="Reset4()">Reset</button>
+        </div>
+        <div id="result4"></div>
+    </div>
+</body>
+</html>
+<script src="Variables_DataTypes_Operator.js"></script>
