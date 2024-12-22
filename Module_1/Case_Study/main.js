@@ -18,29 +18,29 @@ class SnakeGame {
 
     initControls() {
         var self = this;
-        this.speedSlider.addEventListener('input', function() {
+        this.speedSlider.addEventListener('input', function () {
             self.gameSpeed = self.speedSlider.value;
             self.speedValue.textContent = self.gameSpeed + 'ms';
             self.restartGame();
         });
-        document.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', function (event) {
             self.direction(event);
         });
     }
 
     initGame() {
-        this.snake = [{ x: 9 * this.box, y: 10 * this.box }];
+        this.snake = [{x: 9 * this.box, y: 10 * this.box}];
         this.generateFood();
         this.score = 0;
         this.updateScoreDisplay();
-        this.move = "RIGHT";
+        this.move = "";
         this.restartGame();
     }
 
     restartGame() {
         clearInterval(this.game);
         var self = this;
-        this.game = setInterval(function() {
+        this.game = setInterval(function () {
             self.draw();
         }, this.gameSpeed);
     }
@@ -78,26 +78,35 @@ class SnakeGame {
     }
 
     draw() {
-        this.ctx.fillStyle = 'pink';
+        this.ctx.fillStyle = 'white';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
-        for (var i = 0; i < this.snake.length; i++) {
-            this.ctx.fillStyle = (i === 0) ? 'black' : 'blue';
-            this.ctx.strokeStyle = 'pink';
+        for (let i = 0; i < this.snake.length; i++) {
+            const randomR = Math.floor(Math.random() * 255);
+            const randomG = Math.floor(Math.random() * 255);
+            const randomB = Math.floor(Math.random() * 255);
+            this.ctx.fillStyle = `rgb(${randomR}, ${randomG}, ${randomB})`;
             this.ctx.fillRect(this.snake[i].x, this.snake[i].y, this.box, this.box);
-            this.ctx.strokeRect(this.snake[i].x, this.snake[i].y, this.box, this.box);
         }
 
-        this.ctx.fillStyle = 'red';
+        this.ctx.fillStyle = "black";
         this.ctx.fillRect(this.food.x, this.food.y, this.box, this.box);
 
         var snakeX = this.snake[0].x;
         var snakeY = this.snake[0].y;
 
-        if (this.move === 'LEFT') snakeX -= this.box;
-        if (this.move === 'UP') snakeY -= this.box;
-        if (this.move === 'RIGHT') snakeX += this.box;
-        if (this.move === 'DOWN') snakeY += this.box;
+        if (this.move === 'LEFT') {
+            snakeX -= this.box;
+        }
+        if (this.move === 'UP') {
+            snakeY -= this.box;
+        }
+        if (this.move === 'RIGHT') {
+            snakeX += this.box;
+        }
+        if (this.move === 'DOWN') {
+            snakeY += this.box;
+        }
 
         if (snakeX === this.food.x && snakeY === this.food.y) {
             this.score++;
@@ -107,7 +116,7 @@ class SnakeGame {
             this.snake.pop();
         }
 
-        var newHead = { x: snakeX, y: snakeY };
+        var newHead = {x: snakeX, y: snakeY};
 
         if (
             snakeX < 0 || snakeY < 0 ||
