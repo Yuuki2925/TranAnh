@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1:</title>
+</head>
+<body>
+<div id="result"></div>
+</body>
+</html>
+<script>
+    let res = "1<br> 1<br>";
+    let fi1 = 1;
+    fi2 = 1;
+    for (let i = 3; i <= 100; i++) {
+        let fin = fi1 + fi2;
+        res += fin + '<br>';
+        fi1 = fi2;
+        fi2 = fin;
+    }
+    document.getElementById("result").innerHTML = res;
+</script>

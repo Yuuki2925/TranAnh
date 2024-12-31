@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#log {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+}

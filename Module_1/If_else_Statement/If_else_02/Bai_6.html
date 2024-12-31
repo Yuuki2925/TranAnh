@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 6:</title>
+    <style>
+        .container {
+            line-height: 20px;
+            margin: 10px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        label {
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+<h2>Giải hệ phương trình bậc 1</h2>
+<div class="container">
+    <label for="hs1">Hệ số a</label><br>
+    <input type="number" name="hs1" id="hs1" placeholder="Nhập a">
+</div>
+<div class="container">
+    <label for="hs2">Hệ số b</label><br>
+    <input type="number" name="hs2" id="hs2" placeholder="Nhập b">
+</div>
+<button type="submit" onclick="Res()">Tính</button>
+<button type="reset" onclick="Reset()">Reset</button>
+<div id="result"></div>
+</body>
+</html>
+<script>
+    function Res() {
+        const a = Number(document.getElementById("hs1").value);
+        const b = Number(document.getElementById("hs2").value);
+        let res;
+        if (a === 0) {
+            if (b === 0) {
+                document.getElementById("result").innerHTML = "Phương trình vô số nghiệm";
+            } else {
+                document.getElementById("result").innerHTML = "Phương trình vô nghiệm";
+            }
+        } else {
+            res = -b / a;
+            document.getElementById("result").innerHTML = "Phương trình có nghiệm là: " + res.toFixed(2);
+        }
+    }
+
+    function Reset() {
+        document.getElementById("hs1").value = "";
+        document.getElementById("hs2").value = "";
+        document.getElementById("result").innerHTML = "";
+    }
+</script>
