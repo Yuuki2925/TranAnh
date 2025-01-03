@@ -19,7 +19,3 @@ public class SolveLinearEquation {
         }
     }
 }
-// btn: Viết phương trình bậc 2
-/* btn2: ax + by = c
-         dx + ey = f
-*/
