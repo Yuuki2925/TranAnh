@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class SolveLinearEquation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a: ");
+        System.out.print("Enter a: ");
         int a = Integer.parseInt(scanner.nextLine());
-        System.out.println("Enter b: ");
+        System.out.print("Enter b: ");
         int b = Integer.parseInt(scanner.nextLine());
         if (a == 0) {
             if (b == 0) {
@@ -21,5 +21,5 @@ public class SolveLinearEquation {
 }
 // btn: Viết phương trình bậc 2
 /* btn2: ax + by = c
-         dx + gy = f
+         dx + ey = f
 */
