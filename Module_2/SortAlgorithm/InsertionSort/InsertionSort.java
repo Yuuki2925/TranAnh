@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class InsertionSort {
     public static void insertionSort(int[] array) {
-        
+
     }
 
     public static void main(String[] args) {
