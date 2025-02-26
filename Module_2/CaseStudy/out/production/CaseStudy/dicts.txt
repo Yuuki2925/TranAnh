@@ -1,0 +1,14 @@
+Từ: Apple
+  noun: quả táo (Example: No example provided!)
+Từ: Book
+  noun: Sách (Example: No example provided!)
+Từ: Banana
+  noun: Quả chuối (Example: No example provided!)
+Từ: Computer
+  noun: Máy tính (Example: No example provided!)
+Từ: Music
+  noun: Âm nhạc (Example: No example provided!)
+Từ: Go
+  verb: Đi (Example: No example provided!)
+Từ: Run
+  verb: Chạy (Example: No example provided!)
