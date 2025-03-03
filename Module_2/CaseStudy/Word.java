@@ -14,8 +14,8 @@ public class Word {
         return word;
     }
 
-    public void addDefinition(Definition defi) {
-        definitions.add(defi);
+    public void addDefinition(Definition definition) {
+        definitions.add(definition);
     }
 
     public List<Definition> getDefinitions() {

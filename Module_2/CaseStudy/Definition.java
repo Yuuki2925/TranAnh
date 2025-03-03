@@ -1,12 +1,10 @@
 public class Definition {
     private final String type;
     private final String meaning;
-    private final String example;
 
-    public Definition(String type, String meaning, String example) {
+    public Definition(String type, String meaning) {
         this.type = type;
         this.meaning = meaning;
-        this.example = example;
     }
 
     public String getType() {
@@ -17,12 +15,8 @@ public class Definition {
         return meaning;
     }
 
-    public String getExample() {
-        return example;
-    }
-
     @Override
     public String toString() {
-        return type + ": " + meaning + (example.isEmpty() ? "" : " (Example: " + example + ")");
+        return type + ": " + meaning;
     }
 }

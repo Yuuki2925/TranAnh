@@ -1,14 +1,16 @@
 Từ: Apple
-  noun: quả táo (Example: No example provided!)
+  noun: Quả táo
 Từ: Book
-  noun: Sách (Example: No example provided!)
+  noun: Sách
 Từ: Banana
-  noun: Quả chuối (Example: No example provided!)
+  noun: Quả chuối
 Từ: Computer
-  noun: Máy tính (Example: No example provided!)
+  noun: Máy tính
 Từ: Music
-  noun: Âm nhạc (Example: No example provided!)
+  noun: Âm nhạc
 Từ: Go
-  verb: Đi (Example: No example provided!)
+  verb: Đi
 Từ: Run
-  verb: Chạy (Example: No example provided!)
+  verb: Chạy
+Từ: Swim
+  verb: Bơi lội
