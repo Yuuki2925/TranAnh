@@ -1,0 +1,22 @@
+.Phone {
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+    border: 1px solid #000000;
+    padding-top: -10px;
+    padding-left: 10px;
+}
+
+.Phone h1 {
+    text-align: center;
+}
+
+.homeButton {
+    background-color: #000000;
+    margin-left: -10px;
+    color: white;
+    width: 210px;
+    height: 72px;
+    text-align: center;
+}

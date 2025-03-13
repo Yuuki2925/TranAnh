@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng điện thoại</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="Phone">
+    <form>
+        <h1>Nokia</h1>
+        <label for="but1">Công tắc</label>
+        <input type="checkbox" id="but1" onclick="Click1()">
+        <p><span id="display"></span></p>
+        <p>Pin: <label id="Pin"></label></p>
+        <label for="energy">Sạc máy</label>
+        <button type="button" id="energy" onclick="Energy()">Sạc</button>
+        <br><br>
+        <label for="but2">Gửi tin nhắn</label>
+        <button type="button" id="but2" onclick="Button2()">Gửi tin nhắn</button>
+        <br><br>
+        <label for="but3">Tin nhắn đến</label>
+        <button type="button" id="but3" onclick="Button3()">Hộp thư đến</button>
+        <div id="Inbox"></div>
+        <br><br>
+        <label for="but4">Tin nhắn đã gửi</label>
+        <button type="button" id="but4" onclick="Button4()">Hộp lưu trữ</button>
+        <div id="boxMess"></div>
+    </form>
+    <div class="homeButton">
+        <h3>Home</h3>
+    </div>
+</div>
+<div class="Phone">
+    <form>
+        <h1>Iphone</h1>
+        <label for="but5">Công tắc</label>
+        <input type="checkbox" id="but5" onclick="Click()">
+        <p><span id="output"></span></p>
+        <p>Pin: <label id="myPin"></label></p>
+        <label for="energy">Sạc máy</label>
+        <button type="button" id="change" onclick="Change()">Sạc</button>
+        <br><br>
+        <label for="but6">Gửi tin nhắn</label>
+        <button type="button" id="but6" onclick="Button6()">Gửi tin nhắn</button>
+        <br><br>
+        <label for="but7">Tin nhắn đến</label>
+        <button type="button" id="but7" onclick="Button7()">Hộp thư đến</button>
+        <div id="InboxIphone"></div>
+        <br><br>
+        <label for="but8">Tin nhắn đã gửi</label>
+        <button type="button" id="but8" onclick="Button8()">Hộp lưu trữ</button>
+        <div id="boxMessIphone"></div>
+    </form>
+    <div class="homeButton">
+        <h3>Home</h3>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

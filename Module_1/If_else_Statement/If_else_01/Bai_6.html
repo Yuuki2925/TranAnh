@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6:</title>
+</head>
+<body>
+<script>
+    let doanhthu = prompt("Nhập doanh thu: ");
+    let res;
+    if (doanhthu <= 5000000) {
+        res = 5000000 * 0.05;
+    } else if (doanhthu <= 10000000) {
+        res = doanhthu * 0.10;
+    } else if (doanhthu <= 20000000) {
+        res = doanhthu * 0.15;
+    } else {
+        res = doanhthu * 0.20;
+    }
+    alert("Số hoa hồng có được là: " + res);
+</script>
+</body>
+</html>

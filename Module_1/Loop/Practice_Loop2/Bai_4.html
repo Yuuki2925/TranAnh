@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4:</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n = parseInt(prompt("Nhập n: "));
+    for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (i === 1 || i === n || j === 1 || j === n) {
+                document.write("*");
+            } else {
+                document.write("&nbsp;&nbsp");
+            }
+        }
+        document.write("<br>");
+    }
+</script>

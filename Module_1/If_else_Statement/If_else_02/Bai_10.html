@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 10:</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            display: block;
+            width: 100%;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Tính tiền điện</h1>
+    <label for="consumption">Nhập số kWh tiêu thụ:</label>
+    <input type="number" id="consumption" placeholder="Nhập số kWh...">
+    <button onclick="calculateElectricity()">Tính</button>
+    <button onclick="resetFields()">Reset</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateElectricity() {
+        const consumption = Number(document.getElementById("consumption").value);
+        let cost = 0;
+        if (consumption <= 50) {
+            cost = consumption * 1678;
+        } else if (consumption <= 100) {
+            cost = 50 * 1678 + (consumption - 50) * 1734;
+        } else if (consumption <= 200) {
+            cost = 50 * 1678 + 50 * 1734 + (consumption - 100) * 2014;
+        } else if (consumption <= 300) {
+            cost = 50 * 1678 + 50 * 1734 + 100 * 2014 + (consumption - 200) * 2536;
+        } else if (consumption <= 400) {
+            cost = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + (consumption - 300) * 2834;
+        } else {
+            cost = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (consumption - 400) * 2927;
+        }
+
+        document.getElementById("result").innerHTML = 'Số tiền điện: ' + cost.toLocaleString() + `VND`;
+    }
+
+    function resetFields() {
+        document.getElementById("consumption").value = "";
+        document.getElementById("result").innerHTML = "";
+    }
+</script>
+</body>
+</html>

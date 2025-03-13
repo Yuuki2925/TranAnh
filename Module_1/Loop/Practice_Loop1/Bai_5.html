@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5:</title>
+</head>
+<body>
+<div id="res"></div>
+</body>
+</html>
+<script>
+    let sum = 2;
+    let fi1 = 1, fi2 = 1;
+    for (let i = 3; i <= 20; i++) {
+        let fin = fi1 + fi2;
+        sum += fin;
+        fi1 = fi2;
+        fi2 = fin;
+    }
+    document.getElementById("res").innerHTML = "Tổng 20 số đầu trong dãy Fibonacci là: " + sum;
+</script>

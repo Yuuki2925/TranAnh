@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5:</title>
+</head>
+<body>
+<script>
+    let ktra = Number(prompt("Nhập điểm kiểm tra: "));
+    let gky = Number(prompt("Nhập điểm giữa kỳ: "));
+    let cky = Number(prompt("Nhập điểm cuối kỳ: "));
+    if (ktra <= 6 || gky <= 6 || cky <= 6) {
+        alert("Học lực TB");
+    } else if (ktra < 8 || gky < 8 || cky < 8) {
+        alert("Học lực khá");
+    } else {
+        alert("Học lực tốt");
+    }
+</script>
+</body>
+</html>

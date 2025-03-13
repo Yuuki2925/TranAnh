@@ -1,0 +1,22 @@
+Từ: Apple
+  noun: Quả táo
+Từ: Book
+  noun: Sách
+Từ: Banana
+  noun: Quả chuối
+Từ: Computer
+  noun: Máy tính
+Từ: Music
+  noun: Âm nhạc
+Từ: Go
+  verb: Đi
+Từ: Run
+  verb: Chạy
+Từ: Swim
+  verb: Bơi lội
+Từ: Sleep
+  verb: Ngủ
+Từ: Day
+  noun: Ngày
+Từ: Communication
+  noun: Giao tiếp

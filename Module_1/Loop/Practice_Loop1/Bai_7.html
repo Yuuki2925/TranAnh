@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<div id="dis"></div>
+</body>
+<script>
+    let result = "";
+    for (let i = 1; i <= 100; i++) {
+        let text = "";
+        if (i % 15 == 0) {
+            text += `${i}: FizzBuzz`;
+        } else if (i % 3 == 0) {
+            text += `${i}: Fizz`;
+        } else if (i % 5 == 0) {
+            text += `${i}: Buzz`;
+        } else {
+            continue;
+        }
+        result += text + "<br>";
+    }
+    document.getElementById("dis").innerHTML = result;
+</script>
+</html>
