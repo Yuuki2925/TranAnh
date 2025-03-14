@@ -1,0 +1,39 @@
+CREATE DATABASE quanlysinhvien;
+USE quanlysinhvien;
+
+CREATE TABLE Class(
+	ClassID INT AUTO_INCREMENT PRIMARY KEY,
+    ClassName VARCHAR(60) NOT NULL,
+    StartDate DATETIME NOT NULL,
+    Status BIT
+);
+
+CREATE TABLE Student(
+	StudentID INT AUTO_INCREMENT PRIMARY KEY,
+    StudentName NVARCHAR(30) NOT NULL,
+    Address VARCHAR(50),
+    Phone VARCHAR(20),
+    Status BIT,
+    ClassID INT NOT NULL
+);
+
+CREATE TABLE `Subject`(
+	SubId INT AUTO_INCREMENT PRIMARY KEY,
+    SubName NVARCHAR(30) NOT NULL,
+    Credit TINYINT NOT NULL DEFAULT 1 CHECK (Credit >= 1),
+    Status BIT DEFAULT 1
+);
+
+CREATE TABLE MARK(
+	MarkId INT AUTO_INCREMENT PRIMARY KEY,
+    SubId INT NOT NULL UNIQUE,
+    StudentID INT NOT NULL UNIQUE,
+    Mark FLOAT DEFAULT 0 CHECK (Mark BETWEEN 0 AND 100),
+    ExamTimes TINYINT DEFAULT 1,
+    CONSTRAINT FK_Subject_Mark FOREIGN KEY (SubId) REFERENCES Subject (SubId),
+	CONSTRAINT FK_Student_Mark FOREIGN KEY (StudentId) REFERENCES Student (StudentId)
+);
+
+
+
+
