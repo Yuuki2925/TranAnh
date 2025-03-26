@@ -60,9 +60,10 @@ VALUES
 (2, 5, 4),
 (2, 3, 3);
 
--- Hiển thị các thông tin gồm oID, oDate, oPrice của tất cả các hóa đơn trong bảng Order
-SELECT oID, oDate
-FROM `Order`;
+-- Hiển thị các thông tin gồm oID, oDate của tất cả các hóa đơn trong bảng Order
+SELECT o.oID, o.oDate, p.pPrice
+FROM `Order` o JOIN OrderDetail od ON od.oID = o.oID
+			   JOIN Product p ON od.pID = p.pID;
 
 -- Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
 SELECT Customer.cName, Product.pName, Product.pPrice
